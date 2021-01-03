@@ -87,7 +87,7 @@ vline!([betatrue],label="",c="black",line=:dash)
 #
 a = kde_lscv(bestimse_sh2[:,1]);
 xvals, densityvals = a.x, a.density
-p21 = plot(xvals, densityvals,label="Shannon",linewidth=2,title=L"(a)\,\, Q=0.55, \, n=10^4",titlefontsize=10,legendfontsize=7,legend=:topright,ylab="Density",xlim=[0,25],ylim=[0,1.5])
+p21 = plot(xvals, densityvals,label="Shannon",linewidth=2,title=L"(d)\,\, Q=0.55, \, n=10^4",titlefontsize=10,legendfontsize=7,legend=:topright,ylab="Density",xlim=[0,25],ylim=[0,1.5])
 a = kde_lscv(bestimse_r12[:,1]);
 xvals, densityvals = a.x, a.density
 p21 = plot!(xvals, densityvals,label="Renyi (lin.)",linewidth=2)
@@ -98,7 +98,7 @@ vline!([betatrue],label="",c="black",line=:dash)
 #
 a = kde_lscv(bestimse_sh2[:,2]);
 xvals, densityvals = a.x, a.density
-p22 = plot(xvals, densityvals,linewidth=2,title=L"(b)\,\, Q=0.65, \, n=10^4",titlefontsize=10,legendfontsize=7,label="",xlab=L"\hat{\Lambda}",xlim=[0,13],ylim=[0,2.5])
+p22 = plot(xvals, densityvals,linewidth=2,title=L"(e)\,\, Q=0.65, \, n=10^4",titlefontsize=10,legendfontsize=7,label="",xlab=L"\hat{\Lambda}",xlim=[0,13],ylim=[0,2.5])
 a = kde_lscv(bestimse_r12[:,2]);
 xvals, densityvals = a.x, a.density
 p22 = plot!(xvals, densityvals,linewidth=2,label="")
@@ -109,7 +109,7 @@ vline!([betatrue],label="",c="black",line=:dash)
 #
 a = kde_lscv(bestimse_sh2[:,3]);
 xvals, densityvals = a.x, a.density
-p23 = plot(xvals, densityvals,linewidth=2,title=L"(c)\,\, Q=0.75,\, n=10^4",titlefontsize=10,legendfontsize=7,label="",xlim=[0,13],ylim=[0,3.5])
+p23 = plot(xvals, densityvals,linewidth=2,title=L"(f)\,\, Q=0.75,\, n=10^4",titlefontsize=10,legendfontsize=7,label="",xlim=[0,13],ylim=[0,3.5])
 a = kde_lscv(bestimse_r12[:,3]);
 xvals, densityvals = a.x, a.density
 p23 = plot!(xvals, densityvals,linewidth=2,label="")
